@@ -1,6 +1,9 @@
 # The title
 ## Sub title
 
+
+git config --global -l
+
 git init 
 git clone
 
