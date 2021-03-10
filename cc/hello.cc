@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 int main(void){
 	int num;
 	cout << "please input a num:" << endl;
@@ -9,3 +10,4 @@ int main(void){
 	cout << num << endl;
 	return 0;
 }
+
