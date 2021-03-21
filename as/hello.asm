@@ -17,3 +17,9 @@ _start:
     mov eax, 1
     int 0x80
 
+
+; nasm -f elf hello.asm
+; ld -s -o hello hello.o
+; ld -m elf_i386 -s -o hello hello.o
+
+

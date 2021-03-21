@@ -1,7 +1,7 @@
 # AT&T format
 # hello.s
 .data	# data part declare
-	msg : .string "Hello Assembly World!\\n"
+	msg : .string "Hello Assembly World!\n"
 	len = . - msg
 .text	# code part declare
 .global _start	# entrence function
@@ -17,4 +17,7 @@ _start:	# print a string
 	movl $1, %eax	# sys_exit
 	int  $0x80	# call kernel function 
 
+
+# as -o hello.o hello.s
+# ld -s -o hello hello.o
 

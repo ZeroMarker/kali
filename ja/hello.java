@@ -1,8 +1,7 @@
-import java.util.*;
+import java.util.*
 
 public class hello{
 	public static void main(String[] args){
-	System.out.println("Hello, Java world!");
+		System.out.println("Hello, Java World!");
 	}
 }
-
