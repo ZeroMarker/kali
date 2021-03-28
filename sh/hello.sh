@@ -1,16 +1,25 @@
 #!/bin/bash
 
 
-echo "Hello, shell world!\n"
 name="sophomore"
+age=12
+
 
 echo ${name}
 echo ${#name}
 
 
-age=12
-echo ${age}
+echo "Hello, ${name} Shell World!\n"	# single quote without format
+
 
 let age=${age}+1
 echo ${age}
+
+mcd (){
+	mkdir -p "$1"	# first argument 
+	cd "$1"		# $0 self file name 	$? last return value
+}			# $! last process PID	$$ shell pid	$# args				#$
+	# source hello.sh	
+	# mcd test
+
 

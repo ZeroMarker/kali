@@ -7,3 +7,7 @@ max.o: max.c
 clean: 
 	rm *.o hello
 
+# target: dependency
+# 	command
+
+
