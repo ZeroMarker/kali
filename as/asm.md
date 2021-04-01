@@ -80,9 +80,9 @@ jmp 2AE3:3	CS = 2AE3H, IP = 0003H
 
 push %ax
 pop %ax
+
 ## system call
 sys_exit	int
-
 
 ## access address
 
@@ -152,4 +152,102 @@ big_number dq 123456789
 real_number1 dd 1.234
 real_number2 dq 123.456
 
+## constant
+
+
+### equ
+constant equ expression
+
+### %assign
+
+%assign total 10
+%assign total 20
+allow to redefine
+
+### %define
+
+%define ptr [ebr+4]
+
+allow redefine
+
+## count command
+
+### inc
+
+inc destination 
+add 1
+
+### dec 
+
+dec destination 
+sub 1
+
+### add/sub
+
+add/sub destination, source
+
+### mul/imul
+
+mul/imul multiplier
+
+### div/idiv
+
+div/idiv divisor
+
+## logic command
+
+and, or, xor, test, not
+
+## condition
+
+cmp destination, source
+
+jmp label
+
+j<condition>
+
+## loop
+
+jmp label
+
+loop label
+
+mov ecx, 10
+label:
+<loop body>
+loop label
+
+## number
+
+### ASCII
+
+### BCD
+
+## string
+
+## array
+
+numbers dw 34, 45, 56, 666
+
+inventory times 8 dw 0
+
+## procedure
+
+proc:
+	procedure body
+	ret
+
+call proc
+
+## recurive
+
+## macro
+
+%macro macro_name number_of_params
+<macro body>
+%endmacro
+
+## file mangement
+
+## memory mangement
 

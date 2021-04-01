@@ -18,7 +18,7 @@ echo ${age}
 mcd (){
 	mkdir -p "$1"	# first argument 
 	cd "$1"		# $0 self file name 	$? last return value
-}			# $! last process PID	$$ shell pid	$# args				#$
+}			# $! last process PID	$$ shell pid	$# args
 	# source hello.sh	
 	# mcd test
 
