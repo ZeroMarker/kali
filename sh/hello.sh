@@ -16,9 +16,16 @@ let age=${age}+1
 echo ${age}
 
 mcd (){
-	mkdir -p "$1"	# first argument 
-	cd "$1"		# $0 self file name 	$? last return value
-}			# $! last process PID	$$ shell pid	$# args
+	mkdir -p "$1"
+	cd "$1"		
+}			
+
+	# first argument 
+	# $0 self file name 	$? last return value
+	# $! last process PID	$$ shell pid	$# args
+	
+	
+	
 	# source hello.sh	
 	# mcd test
 

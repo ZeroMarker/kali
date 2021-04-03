@@ -11,3 +11,7 @@ int main(void){
 	return 0;
 }
 
+int hello(){
+	printf("Hello, C++ World!\n");
+}
+
