@@ -3,3 +3,7 @@ hello: hello.cc
 
 clean: 
 	rm hello
+
+run: hello
+	./hello
+

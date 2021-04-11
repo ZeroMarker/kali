@@ -20,7 +20,7 @@ mcd (){
 	cd "$1"		
 }			
 
-	# first argument 
+	# $1 first argument 
 	# $0 self file name 	$? last return value
 	# $! last process PID	$$ shell pid	$# args
 	

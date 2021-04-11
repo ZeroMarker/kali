@@ -47,8 +47,10 @@ IA-32CPU
 
 ### control
 
-%fr
+%fr	flag register
+%psw	program status word
 	16bit
+CY
 OF
 DF
 IF
@@ -249,5 +251,20 @@ call proc
 
 ## file mangement
 
+stdin
+stdout
+stderr
+
+sys_fork
+sys_read
+sys_write
+sys_open
+sys_close
+sys_creat
+sys_lseek
+
 ## memory mangement
+
+sys_brk()
+
 
