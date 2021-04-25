@@ -1,0 +1,12 @@
+int main(){
+	int a, b;
+	a=10;
+	b=7;
+	if(a>=b){
+		a=a+b;
+	}
+	else{
+	a=a-b;
+	}
+	return 0;
+}

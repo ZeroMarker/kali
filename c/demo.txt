@@ -1,0 +1,10 @@
+lorem ipsum
+
+int a = 2;
+
+char a[10];
+
+Яндекс
+
+Путин
+

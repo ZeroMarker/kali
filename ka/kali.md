@@ -6,7 +6,7 @@
 
 FQDN Fully Qualified Domain Name
 
-域名记录 A, Cname, NS, MX, PTR
+domainname-record A, Cname, NS, MX, PTR
 
 A
 
@@ -31,8 +31,6 @@ NS
 
 Name Server
 
-
-
 ## Vulnerability Analysis 
 
 ## Wireless Attacks
@@ -48,7 +46,7 @@ eth0
 	inet 192.168.1.203 netmask 255.255.255.0
 
 
-nmap [-sP 网段]
+nmap [-sP network-segment]
 nmap -sP 192.168.1.0/24
 
 192.168.1.1

@@ -70,9 +70,32 @@ lib.isbn();
 
 ## Orieted Object Program
 
-class frame extends JFrame
-
-@Override
+``` java
+class father{
+	Sting name;
+	father(String name){
+		this.name = name;
+	}
+	void fun(){
+		System.out.println("father");
+	}
+}
+class son extends father{
+	@Override
+	son(){
+		super();
+		System.out.println("son");
+	}
+	@Override
+	void fun(){
+		System.out.println("son");
+	}
+	//overload
+	void fun(int age){
+		System.out.println(age);
+	}
+}
+```
 
 ### Interface
 
