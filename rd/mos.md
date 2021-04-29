@@ -111,3 +111,15 @@ On the 7094, when the current job paused to wait for a tape or other I/O operati
 sat idle until the I/O finished.
 The solution that evolved was to partition memory into several pieces, with a different job in each partition,
 While on job was waiting for I/O to complete, another job could be using the CPU.
+Having multiple jobs safely in memory at once requires special hardware to protect each job against snooping and 
+mischief by the other ones, but the 360 and other third-generation systems were equipped with this hardware.
+Another major feature present in third-generation operating systems was the ability to read jobs from cards onto 
+the disk as soon as they were brought to the computer room.
+Then, whenever a running job finished, the operating system could load a new job from disk into the now-empty
+partition and run it. This technique is called spooling (from Simultaneous Peripheral Operation On Line) and was 
+also used for output.
+
+The first general-purpose timesharing system, CTSS(Compatible Time Sharing System), was devoleped at M.I.T. on a 
+specially modified 7094 (Corbato et al, 1962).
+
+
