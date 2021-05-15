@@ -111,6 +111,7 @@ On the 7094, when the current job paused to wait for a tape or other I/O operati
 sat idle until the I/O finished.
 The solution that evolved was to partition memory into several pieces, with a different job in each partition,
 While on job was waiting for I/O to complete, another job could be using the CPU.
+
 Having multiple jobs safely in memory at once requires special hardware to protect each job against snooping and 
 mischief by the other ones, but the 360 and other third-generation systems were equipped with this hardware.
 Another major feature present in third-generation operating systems was the ability to read jobs from cards onto 
@@ -121,5 +122,70 @@ also used for output.
 
 The first general-purpose timesharing system, CTSS(Compatible Time Sharing System), was devoleped at M.I.T. on a 
 specially modified 7094 (Corbato et al, 1962).
+
+After the success of the CTSS system, M.I.T, Bell Labs, and General Electric(then a major computer manufacturer) 
+decided to embark on the development of a "computer utility", a machine that would support some hundreds of 
+simultaneous timesharing users. The designers of this system, known as MULTICS(MULTipled Information and Computer
+Service), envisioned one huge machine providing computing power for everyone in the Boston area.
+
+Another major development during the third generation was the phenomenal growth of minicomputer, starting with the
+DEC PDP-1 in 1961.
+One of the computer scientists at Bell Labs who had worked on the MULTICS project, Ken Thompson, subsequently found
+a small PDP-7 minicomputer that no one using and set out to write a stripped-down, one-user version of MULTICS. This
+work later developed into the UNIX operating system, which became popular in the academic world, with government 
+agencies, and with many companies.
+
+Two major versions developed, System V, from AT&T, and BSD(Berkeley Software Distribution) from the University of
+California at Berkeley. These had minor variants as well. 
+To make it possible to write programs that could run on any UNIX system, IEEE developed a standard for UNIX, called
+POSIX, that most versions of UNIX now support.
+
+As an aside, it is worth mentioning that in 1987, the author released a small clone of UNIX, called MINIX, for 
+educational purposes.
+
+The desire for a free production (as opposed to educational) version of MINIX led a Finnish student, Linus Torvalds,
+to write Linux.
+
+## 1.2.4 The Fourth Generation (1980-Present) Personal Computers
+
+In 1974, when Intel came out with the 8080, the first general-purpose 8-bit CPU, it wanted an operating system for 
+the 8080, in part to able to test it. 
+Kildall then wrote a disk-based operating system called CP/M (Control Program for Microcomputers) for it.
+
+In the early 1980s, IBM designed the IBM PC and looked around for software to run on it.
+People from IBM contacted Bill Gates to license his BASIC interpreter.
+
+When IBM came back, Gates realized that a local computer manufacturer, Seattle Computer Products, had a suitable 
+operating system, DOS (Disk Operating System). 
+IBM wanted certain modifications, so Gates hired the perpson who wrote DOS, Tim Paterson, as an employee of Gates'
+fledgling company, Microsoft, to make them. The revised system was renamed MS-DOS (MicroSoft Disk Operating System)
+and quickly came to dominate the IBM PC market. 
+
+Engelbart invented the GUI(Graphical User Interface), complete with windows, icons menus, and mouse. These ideas
+were adopted by researchers at Xerox PARC and incorporated into machines they built.
+
+One day, Steve Jobs, who co-invented the Apple computer in his garage, visited PARC, saw a GUI, and instantly 
+realized its potential value,
+
+Windows NT (New Technology)
+
+Windows Me (Millennium edition)
+
+Windows XP (Windows 2000)
+
+Windows Vista
+
+nearly all UNIX systems support a windowing system called the X Window System (also known as X11) produced at M.I.T.
+Often a complete GUI, such as Gnome or KDE is available to run on top of X11 giving UNIX a look and feel something
+like the Macintosh or Microsoft Windows, for those UNIX users who want such a thing.
+
+## 1.3 Computer Hardware Review
+
+		Monitor			Keyboard		USB printer	Hard disk dirve
+CPU	Memory	Video controller	Keyboard controller	USB controller	Hard disk controller
+										
+										bus
+## 1.3.1 Processors
+
 
 
